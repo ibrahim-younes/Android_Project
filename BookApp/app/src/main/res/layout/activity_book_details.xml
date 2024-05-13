@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b2"
+    android:padding="16dp"
+    tools:context=".BookDetailsActivity">
+
+
+    <TextView
+        android:id="@+id/title_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Book Title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtitle"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_TextView" />
+
+    <ImageView
+        android:id="@+id/book_CoverImageView"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/b1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle_TextView" />
+
+    <TextView
+        android:id="@+id/authors_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Authors"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/book_CoverImageView" />
+
+    <TextView
+        android:id="@+id/publisher_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="URL"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/authors_TextView" />
+
+    <Button
+        android:id="@+id/download_Button"
+        android:layout_width="159dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#212749"
+        android:text="Download"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bookmark_Button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_TextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/pages_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="187dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="170dp"
+        android:text="Pages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publisher_TextView" />
+
+    <ImageButton
+        android:id="@+id/bookmark_Button"
+        android:layout_width="60dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/bookmark_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/description_TextView"
+        android:layout_width="240dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="65dp"
+        android:text="Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pages_textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

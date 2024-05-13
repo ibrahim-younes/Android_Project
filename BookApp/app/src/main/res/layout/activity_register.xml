@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b2"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/CreateAccount_Textview"
+        android:layout_width="345dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="35dp"
+        android:gravity="center"
+        android:text="Create New Account 😼"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="245dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="83dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateAccount_Textview" />
+
+    <EditText
+        android:id="@+id/emailAddress"
+        android:layout_width="245dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="83dp"
+        android:ems="10"
+        android:hint="Email:"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="244dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        android:hint="Password:"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
+
+    <EditText
+        android:id="@+id/editPassword2"
+        android:layout_width="241dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="87dp"
+        android:ems="10"
+        android:hint="Confirm Password:"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+    <Button
+        android:id="@+id/reg_Button"
+        android:layout_width="170dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="57dp"
+        android:backgroundTint="#212749"
+        android:text="REGISTER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
